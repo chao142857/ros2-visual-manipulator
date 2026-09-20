@@ -1,0 +1,5 @@
+arm_driver_node:
+  ros__parameters:
+    use_mock: true
+    allow_motion_commands: false
+    mock_raw_degrees: [0.0, -75.0, 180.0, 0.0, 0.0, 0.0]

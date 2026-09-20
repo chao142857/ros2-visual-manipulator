@@ -1,0 +1,8 @@
+# ROS Humble uses the system Python 3.10 ABI; install only inside a local venv.
+-r src/tabletop_grasp/requirements.txt
+# Legacy AprilTag uses cv2.aruco.ArucoDetector (OpenCV >= 4.7).
+opencv-contrib-python==4.11.0.86
+pyserial==3.5
+pytest>=6.2,<9
+# Complete the PyNaCl dependency inherited with Ubuntu ROS development tools.
+cffi==1.17.1

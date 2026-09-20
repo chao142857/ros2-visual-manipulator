@@ -1,0 +1,8 @@
+# Opens a real controller; verify its identity before starting.
+arm_driver_node:
+  ros__parameters:
+    use_mock: false
+    allow_motion_commands: false
+    serial_port: /dev/serial/by-id/REPLACE_WITH_ARM_CONTROLLER
+    baud_rate: 115200
+    poll_period: 0.1

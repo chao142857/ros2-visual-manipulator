@@ -1,0 +1,80 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: wrist_d405_color_optical_frame
+    Background Color: 32; 34; 38
+    Frame Rate: 30
+  Displays:
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Raw camera cloud
+    Enabled: false
+    Alpha: 0.15
+    Topic:
+      Value: /tabletop_camera/input_cloud
+      Reliability Policy: Best Effort
+    Size (Pixels): 1
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 130; 135; 145
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Filtered camera scene
+    Enabled: true
+    Alpha: 0.3
+    Topic:
+      Value: /tabletop_camera/filtered_cloud
+      Reliability Policy: Best Effort
+    Size (Pixels): 2
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 160; 170; 185
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Candidate support plane - gravity unverified
+    Enabled: true
+    Topic:
+      Value: /tabletop_camera/table_cloud
+      Reliability Policy: Best Effort
+    Size (Pixels): 2
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 60; 100; 240
+  - Class: rviz_default_plugins/PointCloud2
+    Name: Target cloud
+    Enabled: true
+    Topic:
+      Value: /tabletop_camera/target_cloud
+      Reliability Policy: Best Effort
+    Size (Pixels): 4
+    Style: Points
+    Color Transformer: FlatColor
+    Color: 255; 180; 40
+  - Class: rviz_default_plugins/MarkerArray
+    Name: OBB center long-short-normal axes
+    Enabled: true
+    Topic:
+      Value: /tabletop_camera/perception_markers
+  - Class: rviz_default_plugins/MarkerArray
+    Name: Unvalidated closing-axis pi symmetry - no TCP
+    Enabled: true
+    Topic:
+      Value: /tabletop_camera/orientation_preview
+  - Class: rviz_default_plugins/TF
+    Name: Camera frames only
+    Enabled: false
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.38
+      Pitch: -1.3
+      Yaw: 1.57
+      Focal Point:
+        X: -0.015
+        Y: 0.1
+        Z: 0.265
+Window Geometry:
+  Width: 1280
+  Height: 800

@@ -1,0 +1,30 @@
+/**:
+  ros__parameters:
+    frame_mode: camera
+    output_namespace: /tabletop_camera
+    object_frame: tabletop_camera_object
+    base_frame: base_link
+    input_mode: rgbd
+    cloud_is_optical: true
+    rgbd_rectified: true
+    color_topic: /wrist_camera/wrist_d405/color/image_rect_raw
+    depth_topic: /wrist_camera/wrist_d405/aligned_depth_to_color/image_raw
+    camera_info_topic: /wrist_camera/wrist_d405/color/camera_info
+    cloud_topic: /wrist_camera/wrist_d405/depth/color/points
+    # Optical frame metres: +X right, +Y down, +Z forward. Not robot base coordinates.
+    perception.roi_min: [-0.45, -0.35, 0.07]
+    perception.roi_max: [0.45, 0.35, 0.60]
+    perception.min_depth_m: 0.07
+    perception.max_depth_m: 0.60
+    # Same geometric filtering and observability gates as the base pipeline.
+    perception.voxel_m: 0.003
+    perception.selection: isolated
+    # Normal faces the observing camera. No gravity/horizontal-world assumption.
+    # Reject nearly edge-on support planes rather than fitting unstable footprints.
+    camera_max_incidence_deg: 75.0
+    sync_slop_sec: 0.05
+    sync_queue_size: 6
+    max_age_sec: 1.0
+    processing_period_sec: 0.25
+    marker_lifetime_sec: 1.5
+    label_height_m: 0.005

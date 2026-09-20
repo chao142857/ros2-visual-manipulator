@@ -1,0 +1,17 @@
+/**:
+  ros__parameters:
+    # Shared by the Console and an arm_driver started from the Console launch.
+    # Values use the intuitive/ideal coordinates defined by joint_mapping.py.
+    joint_min_rad: [-3.14, -3.14, -3.14, -3.14, -3.14, -3.14]
+    joint_max_rad: [3.14, 3.14, 3.14, 3.14, 3.14, 3.14]
+
+arm_console:
+  ros__parameters:
+    state_timeout_sec: 1.0
+    recovery_valid_frames: 3
+    service_timeout_sec: 2.0
+    live_publish_period_sec: 0.1
+    live_gui_heartbeat_timeout_sec: 0.25
+    # 2026-08-17 physical endpoints for the geared gripper.
+    gripper_open_pulse_us: 600
+    gripper_close_pulse_us: 1300

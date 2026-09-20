@@ -1,0 +1,13 @@
+planning_plugin: ompl_interface/OMPLPlanner
+# Do not jiggle a colliding start state or silently clamp actual joint feedback.
+request_adapters: >-
+  default_planner_request_adapters/AddTimeOptimalParameterization
+  default_planner_request_adapters/ResolveConstraintFrames
+start_state_max_bounds_error: 0.0
+planner_configs:
+  RRTConnectkConfigDefault:
+    type: geometric::RRTConnect
+    range: 0.0
+arm:
+  planner_configs: [RRTConnectkConfigDefault]
+  longest_valid_segment_fraction: 0.005

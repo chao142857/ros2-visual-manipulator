@@ -1,0 +1,31 @@
+# SYNTHETIC FIXTURE ONLY. These are NOT measured physical gripper dimensions.
+/**:
+  ros__parameters:
+    input_mode: cloud
+    cloud_topic: /tabletop/test_cloud
+    cloud_is_optical: false
+    joint_states_topic: /tabletop/test_joint_states
+    gripper.geometry_verified: true
+    # These independent claims belong ONLY to the hypothetical domain-191 fixture.
+    gripper.geometry_source: synthetic_fixture
+    gripper.cad_geometry_verified: true
+    gripper.grasp_dimensions_verified: true
+    gripper.jaw_opening_range_verified: true
+    gripper.jaw_configuration_verified: true
+    gripper.tcp_verified: true
+    gripper.cad_attachment_verified: true
+    gripper.camera_extrinsics_verified: true
+    # No actual CAD artifact or measured CAD metadata is borrowed by this fixture.
+    gripper.cad_collision_proxy_path: ''
+    gripper.cad_envelope_xyz_m: [0.0, 0.0, 0.0]
+    gripper.cad_tip_pad_envelope_xyz_m: [0.0, 0.0, 0.0]
+    gripper.cad_static_inner_gap_m: 0.0
+    gripper.min_opening_m: 0.01
+    gripper.max_opening_m: 0.075
+    gripper.current_opening_m: 0.075
+    gripper.finger_thickness_m: 0.006
+    gripper.finger_width_m: 0.012
+    gripper.finger_length_m: 0.035
+    gripper.fingertip_below_tcp_m: 0.005
+    gripper.palm_depth_m: 0.015
+    gripper.palm_width_m: 0.025

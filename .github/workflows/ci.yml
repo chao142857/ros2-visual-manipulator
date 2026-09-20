@@ -1,0 +1,51 @@
+name: Public software subset
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  software:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    env:
+      PYTHONNOUSERSITE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: humble
+      - name: Install declared subset dependencies
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-venv python3-colcon-common-extensions python3-pip
+          rosdep update
+          rosdep install --from-paths src/arm_driver src/gripper_driver src/camera_perception --ignore-src --rosdistro humble -y
+          python3 -m venv --system-site-packages .venv-ci
+          .venv-ci/bin/python -m pip install 'setuptools==69.5.1' 'numpy<2' 'opencv-contrib-python==4.11.0.86' 'pyserial==3.5' 'pytest>=6.2,<9' 'cffi==1.17.1'
+          .venv-ci/bin/python -m pip check
+      - name: Check actual public payload
+        shell: bash
+        run: |
+          mkdir -p log-release
+          if [[ -f PUBLICATION_MANIFEST.json ]]; then
+            python3 tools/release/audit.py . --strict-public --json log-release/public-audit.json
+          else
+            python3 tools/release/export_publication.py "$RUNNER_TEMP/publication-candidate"
+            python3 tools/release/audit.py "$RUNNER_TEMP/publication-candidate" --strict-public --json log-release/public-audit.json
+          fi
+      - name: Release tool checks and partial software CI
+        shell: bash
+        run: |
+          python3 tools/release/test_release_tools.py
+          export ARM_PYTHON_ENV="$PWD/.venv-ci"
+          bash scripts/ci.sh
+      - name: Save test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: software-test-results
+          path: log-release/
+          retention-days: 14

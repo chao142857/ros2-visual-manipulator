@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>dual_camera_foundation</name>
+  <version>0.1.0</version>
+  <description>Dual-camera perception, D405 RGB-D targeting, and hand-eye tools.</description>
+  <url type="repository">https://github.com/chao142857/ros2-visual-manipulator</url>
+  <maintainer email="chao070503@gmail.com">bbabbr123-sketch</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>camera_perception</depend>
+  <depend>cv_bridge</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <exec_depend>tabletop_grasp</exec_depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>arm_console</exec_depend>
+  <exec_depend>arm_description</exec_depend>
+  <exec_depend>arm_driver</exec_depend>
+  <exec_depend>astra_camera</exec_depend>
+  <exec_depend>gripper_driver</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>launch_xml</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>urdfdom_py</exec_depend>
+  <exec_depend>wrist_camera_bringup</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

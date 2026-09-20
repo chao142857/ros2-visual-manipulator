@@ -1,0 +1,29 @@
+# Optional config_file for upstream realsense2_camera/rs_launch.py.
+# The package launch exposes the same conservative values as arguments, so this
+# file is primarily a documented baseline for experiments.
+enable_color: true
+enable_depth: true
+enable_infra: false
+enable_infra1: false
+enable_infra2: false
+enable_gyro: false
+enable_accel: false
+depth_module.depth_profile: 640x480x30
+depth_module.depth_format: Z16
+depth_module.color_profile: 640x480x30
+depth_module.color_format: RGB8
+enable_sync: true
+enable_rgbd: false
+pointcloud.enable: false
+align_depth.enable: false
+colorizer.enable: false
+decimation_filter.enable: false
+spatial_filter.enable: false
+temporal_filter.enable: false
+hole_filling_filter.enable: false
+initial_reset: false
+publish_tf: true
+tf_publish_rate: 0.0
+wait_for_device_timeout: -1.0
+reconnect_timeout: 3.0
+diagnostics_period: 1.0

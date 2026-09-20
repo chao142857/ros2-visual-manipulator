@@ -1,0 +1,8 @@
+# Identity is a format example, never a measured calibration.
+camera_extrinsics_publisher_node:
+  ros__parameters:
+    calibrated: false
+    parent_frame: base_link
+    child_frame: camera_link
+    xyz: [0.0, 0.0, 0.0]
+    quaternion: [0.0, 0.0, 0.0, 1.0]

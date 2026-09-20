@@ -1,0 +1,10 @@
+# Disabled by default; this is not simulated position or grasp feedback.
+gripper_driver_node:
+  ros__parameters:
+    allow_hardware_actuation: false
+    serial_port: /dev/serial/by-id/REPLACE_WITH_GRIPPER_CONTROLLER
+    baud_rate: 115200
+    gripper_channel: 0
+    open_pulse_us: 600
+    close_pulse_us: 1300
+    move_duration_ms: 600

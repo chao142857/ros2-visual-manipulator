@@ -1,0 +1,15 @@
+# Deliberately invalid for calibrated publication: no accepted samples.
+schema: dual_camera_foundation.hand_eye_calibration
+tool_frame: tool0
+camera_frame: wrist_d405_link
+method: UNCALIBRATED_EXAMPLE
+T_tool_camera:
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, 1.0, 0.0, 0.0]
+  - [0.0, 0.0, 1.0, 0.0]
+  - [0.0, 0.0, 0.0, 1.0]
+validation:
+  sample_count: 0
+  translation_rms_m: 1.0
+  rotation_rms_deg: 180.0
+  outlier_count: 0

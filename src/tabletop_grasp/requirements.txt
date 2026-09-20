@@ -1,0 +1,6 @@
+# Install in the repo-local ROS-compatible venv; leave system Python untouched.
+open3d-cpu==0.19.0
+numpy>=1.24,<2
+scipy>=1.10,<1.15
+# ROS Humble colcon uses setup.py develop --editable.
+setuptools==69.5.1

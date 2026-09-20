@@ -1,0 +1,84 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 32; 34; 38
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.1
+    - Class: rviz_default_plugins/RobotModel
+      Name: Frozen robot model
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+      Visual Enabled: true
+      Collision Enabled: false
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Filtered scene
+      Enabled: true
+      Alpha: 0.2
+      Topic:
+        Value: /tabletop/filtered_cloud
+        Reliability Policy: Best Effort
+      Size (Pixels): 2
+      Style: Points
+      Color Transformer: FlatColor
+      Color: 160; 170; 185
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Target cloud
+      Enabled: true
+      Topic:
+        Value: /tabletop/target_cloud
+        Reliability Policy: Best Effort
+      Size (Pixels): 4
+      Style: Points
+      Color Transformer: FlatColor
+      Color: 255; 180; 40
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Table OBB center long-short-up axes
+      Enabled: true
+      Topic:
+        Value: /tabletop/perception_markers
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Grasp candidates and selected poses
+      Enabled: true
+      Topic:
+        Value: /tabletop/grasp_markers
+    - Class: moveit_rviz_plugin/Trajectory
+      Name: Planned trajectory - preview only
+      Enabled: true
+      Robot Description: robot_description
+      Trajectory Topic: /tabletop/display_planned_path
+      Loop Animation: true
+      State Display Time: 0.1s
+      Show Robot Visual: true
+      Show Robot Collision: false
+      Show Trail: true
+      Trail Step Size: 10
+      Robot Alpha: 0.3
+    - Class: rviz_default_plugins/TF
+      Name: Frames
+      Enabled: false
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.85
+      Pitch: 0.8
+      Yaw: 4.3
+      Focal Point:
+        X: 0.0
+        Y: -0.2
+        Z: 0.1
+Window Geometry:
+  Width: 1280
+  Height: 800

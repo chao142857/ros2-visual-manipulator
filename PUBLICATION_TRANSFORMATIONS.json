@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "local_source_modified": false,
+  "changes": [
+    {
+      "path": "src/dual_camera_foundation/launch/dual_camera_foundation.launch.py",
+      "line": 19,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/dual_camera_foundation/launch/dual_camera_system.launch.py",
+      "line": 20,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/dual_camera_foundation/launch/system_bringup.launch.py",
+      "line": 481,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/tabletop_grasp/launch/camera_observation.launch.py",
+      "line": 20,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/tabletop_grasp/launch/tabletop_grasp.launch.py",
+      "line": 23,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/tabletop_grasp/scripts/run_camera_observation.py",
+      "line": 26,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/launch/wrist_d405.launch.py",
+      "line": 167,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/launch/wrist_d405_console.launch.py",
+      "line": 145,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 84,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 162,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 178,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "0"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 178,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 192,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_health.py",
+      "line": 195,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 46,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 3,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 47,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 3,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 48,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 3,
+      "replacement": "0"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 49,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 3,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 63,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 2,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 89,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_serial_and_launch_support.py",
+      "line": 93,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 73,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 98,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 117,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 127,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 155,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 172,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "0"
+    },
+    {
+      "path": "src/wrist_camera_bringup/test/test_smoke_evaluation.py",
+      "line": 180,
+      "category": "device_identifier_to_nonmatching_sentinel",
+      "occurrences": 1,
+      "replacement": "1"
+    },
+    {
+      "path": "src/arm_console/launch/arm_console.launch.py",
+      "line": 163,
+      "end_line": 165,
+      "category": "device_path_to_explicit_configuration_placeholder",
+      "occurrences": 1,
+      "replacement": "/dev/serial/by-id/CONFIGURE_GRIPPER_PORT"
+    },
+    {
+      "path": "src/dual_camera_foundation/launch/system_bringup.launch.py",
+      "line": 460,
+      "end_line": 462,
+      "category": "device_path_to_explicit_configuration_placeholder",
+      "occurrences": 1,
+      "replacement": "/dev/serial/by-id/CONFIGURE_GRIPPER_PORT"
+    },
+    {
+      "path": "src/gripper_driver/gripper_driver/gripper_driver_node.py",
+      "line": 57,
+      "end_line": 59,
+      "category": "device_path_to_explicit_configuration_placeholder",
+      "occurrences": 1,
+      "replacement": "/dev/serial/by-id/CONFIGURE_GRIPPER_PORT"
+    },
+    {
+      "path": "src/wrist_camera_bringup/launch/wrist_d405_console.launch.py",
+      "line": 209,
+      "end_line": 211,
+      "category": "device_path_to_explicit_configuration_placeholder",
+      "occurrences": 1,
+      "replacement": "/dev/serial/by-id/CONFIGURE_GRIPPER_PORT"
+    },
+    {
+      "path": "src/tabletop_grasp/test/test_inverse_brown_rgbd.py",
+      "line": 3,
+      "end_line": 3,
+      "category": "remove_unused_private_profile_test_import",
+      "occurrences": 1
+    },
+    {
+      "path": "src/tabletop_grasp/test/test_inverse_brown_rgbd.py",
+      "line": 8,
+      "end_line": 8,
+      "category": "remove_unused_private_profile_test_import",
+      "occurrences": 1
+    },
+    {
+      "path": "src/tabletop_grasp/test/test_inverse_brown_rgbd.py",
+      "line": 14,
+      "end_line": 22,
+      "category": "recorded_intrinsics_to_synthetic_test_fixture",
+      "occurrences": 1
+    },
+    {
+      "path": "src/tabletop_grasp/test/test_inverse_brown_rgbd.py",
+      "line": 104,
+      "end_line": 113,
+      "category": "omit_test_requiring_excluded_private_scene_profiles",
+      "occurrences": 1
+    },
+    {
+      "path": "src/arm_description/package.xml",
+      "category": "source_only_package_license_declaration",
+      "occurrences": 1,
+      "scope": "Only the exported source-only package: original software under the root Apache-2.0 license. Excluded local models and CAD receive no license grant."
+    },
+    {
+      "path": "src/arm_description/package.xml",
+      "category": "source_only_package_description",
+      "occurrences": 1,
+      "scope": "Only the exported source-only package: original software under the root Apache-2.0 license. Excluded local models and CAD receive no license grant."
+    }
+  ],
+  "line_convention": "Line numbers refer to the private source snapshot before export.",
+  "behavior_note": "Exported camera identity bindings/fixtures use nonmatching sentinels; the gripper USB identity path becomes an explicit configuration placeholder. Supply your real serial/port explicitly before hardware bringup. Actuator mappings, directions, limits, zero offsets and PWM ranges are not transformed. The pinned inverse-Brown test uses synthetic intrinsics and omits one test requiring excluded private scene profiles."
+}

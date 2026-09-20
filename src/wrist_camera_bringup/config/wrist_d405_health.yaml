@@ -1,0 +1,17 @@
+/**/wrist_d405_health_monitor:
+  ros__parameters:
+    expected_width: 640
+    expected_height: 480
+    expected_fps: 30.0
+    minimum_fps_ratio: 0.7
+    freshness_sec: 1.0
+    status_period_sec: 1.0
+    startup_grace_sec: 5.0
+    device_info_retry_sec: 5.0
+    recommended_firmware: "5.16.0.1"
+    driver_diagnostics_topic: /diagnostics
+    mount_parent_frame: tool0
+    mount_child_frame: wrist_d405_link
+    require_mount_tf: false
+    mount_tf_is_placeholder: false
+    require_aligned_depth: false
