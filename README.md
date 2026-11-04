@@ -6,6 +6,8 @@ A ROS 2 workspace for a six-axis robotic arm with serial control, an independent
 
 Built as a hands-on robotics project on **Ubuntu 22.04 + ROS 2 Humble**.
 
+![Robotic arm at the workbench](assets/robot-arm.gif)
+
 ## Features
 
 - **Robot control:** six-axis serial communication, joint-state feedback, joint commands, and ROS 2 command topics and services.
